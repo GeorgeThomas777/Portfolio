@@ -16,7 +16,7 @@ body {
 }
 
 nav {
-    background-color: #f4e4e4;
+    background-color: #363333;
     overflow: hidden;
     display: flex;
     height: 4em;
@@ -37,7 +37,7 @@ nav ul {
 
 nav a {
     display: block;
-    color: rgb(208, 10, 10);
+    color: rgb(238, 222, 222);
     text-align: center;
     padding: 140px 15px;
     text-decoration: none;
