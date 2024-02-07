@@ -1,3 +1,12 @@
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -5,7 +14,7 @@ body {
 }
 
 nav {
-    background-color: #363333;
+    background-color: black;
     overflow: hidden;
     display: flex;
     height: 4em;
@@ -26,7 +35,7 @@ nav ul {
 
 nav a {
     display: block;
-    color: rgb(238, 222, 222);
+    color: white;
     text-align: center;
     padding: 140px 15px;
     text-decoration: none;
@@ -52,6 +61,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 5em;
+    animation: zoomIn 1s ease;
 }
 
 .photo{
@@ -78,4 +88,26 @@ p{
     line-height: 1.5;
     font-size:larger;
     font-weight: bolder;
+}
+
+.social-icons {
+    display: flex;
+    gap:20px; 
+  }
+  
+  .icon img {
+    width: 30px; 
+    height: 30px; 
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .icon:hover img {
+    transform: scale(1.5); /* Optional: Zoom in on hover */
+  }
+
+footer{
+      display: flex;
+      align-items: center;
+      justify-content: center;
 }
